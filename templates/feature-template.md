@@ -42,7 +42,7 @@ users?
 
 > Why should we *not* do this?
 
-# Rationale and alternatives
+## Rationale and alternatives
 [rationale-and-alternatives]: #rationale-and-alternatives
 
 - Why is this design the best in the space of possible designs?
