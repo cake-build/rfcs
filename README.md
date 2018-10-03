@@ -20,8 +20,8 @@ merged into the RFC repository as a markdown file. At that point the RFC is
 "active" and may be implemented with the goal of eventual inclusion into Cake.
 
   - Fork the RFC repo [RFC repository]
-  - Copy `templates/feature-template.md` to `text/0000-my-feature.md` (where "my-feature" is
-    descriptive. don't assign an RFC number yet).
+  - Copy `templates/feature-template.md` to `text/0000-my-feature.md` 
+    (where "my-feature" is descriptive. don't assign an RFC number yet).
   - Fill in the RFC. Put care into the details: RFCs that do not present
     convincing motivation, demonstrate understanding of the impact of the
     design, or are disingenuous about the drawbacks or alternatives tend to be
@@ -42,9 +42,9 @@ merged into the RFC repository as a markdown file. At that point the RFC is
     request, and leave a comment on the pull request explaining your changes.
     Specifically, do not squash or rebase commits after they are visible on the
     pull request.
-  - At some point, a member of the maintenance team will propose a "motion for      final
-    comment period" (FCP), along with a *disposition* for the RFC (merge, close,
-    or postpone).
+  - At some point, a member of the maintenance team will propose a "motion for
+    final comment period" (FCP), along with a *disposition* for the RFC 
+    (merge, close, or postpone).
     - This step is taken when enough of the tradeoffs have been discussed that
     the maintaince team is in a position to make a decision. That does not require
     consensus amongst all participants in the RFC thread (which is usually
