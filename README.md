@@ -55,3 +55,39 @@ merged into the RFC repository as a markdown file. At that point the RFC is
   - In most cases, the FCP period is quiet, and the RFC is either merged or
     closed. However, sometimes substantial new arguments or ideas are raised,
     the FCP is canceled, and the RFC goes back into development mode.
+
+## The RFC life-cycle
+
+Once an RFC becomes active, then authors may implement it and submit the
+feature as a pull request to the Cake repo. Becoming 'active' is not a rubber
+stamp, and in particular still does not mean the feature will ultimately
+be merged; it does mean that the core team has agreed to it in principle
+and are amenable to merging it.
+
+Furthermore, the fact that a given RFC has been accepted and is
+'active' implies nothing about what priority is assigned to its
+implementation, nor whether anybody is currently working on it.
+
+Modifications to active RFCs should be done in followup PRs.
+
+## Reviewing RFCs
+
+Cake is an open source project which is maintained in the maintainers free time. 
+There is no SLA when it comes to reviewing RFCs.
+
+## Implementing an RFC
+
+The author of an RFC is not obligated to implement it. Of course, the
+RFC author (like any other developer) is welcome to post an
+implementation for review after the RFC has been accepted.
+
+If you are interested in working on the implementation for an 'active'
+RFC, but cannot determine if someone else is already working on it,
+feel free to ask (e.g. by leaving a comment on the associated issue).
+
+**Cake's RFC process owes its inspiration to the [Yarn RFC process], [Rust RFC process], [React RFC process] and [Ember RFC process]**
+
+[Yarn RFC process]: https://github.com/yarnpkg/rfcs
+[Rust RFC process]: https://github.com/rust-lang/rfcs
+[React RFC process]: https://raw.githubusercontent.com/reactjs/rfcs
+[Ember RFC process]: https://github.com/emberjs/rfcs
