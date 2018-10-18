@@ -50,6 +50,9 @@ https://mycustomnugetsource
 ## Detailed design
 [detailed-design]: #detailed-design
 
+Current arguments should be backwards compatible. In addition to that we will add new
+CLI commands: `build`, `bootstrap`.
+
 ### Changes to Cake
 
 * Introduce [Spectre.Cli](https://github.com/spectresystems/spectre.cli) library for command handling.  
@@ -57,14 +60,13 @@ https://mycustomnugetsource
 
 ### Changes to Cake.Core
 
-* Make `AssemblyLoader` public
-* Make `AssemblyVerifier` public
 * Change `ICakeArguments`
   - `string GetArgument(string name)` becomes `IEnumerable<string> GetArguments(string name)`
-
+  
 ### Changes to Cake.Common
 
 * New alias: `IEnumerable<T> Arguments<T>(string name)`
+* Modified alias: `T Argument<T>(string name)` should return the first instance or `null`.
 
 ## How we teach this
 [how-we-teach-this]: #how-we-teach-this
@@ -93,10 +95,3 @@ repository, or add it as a submodule or subtree to the Cake project.
 [rationale-and-alternatives]: #rationale-and-alternatives
 
 We could keep things as they are.
-
-## Unresolved questions
-[unresolved-questions]: #unresolved-questions
-
-Should we move Roslyn related things to it's own assembly and NuGet package?
-This would make it easier to share code with Bakery, but @mholo65 probably
-knows the details about this better than I do.
