@@ -5,7 +5,7 @@ implemented and reviewed via the normal GitHub pull request workflow.
 
 Some changes though are "substantial", and we ask that these be put through a
 bit of a design process and produce a consensus among the Cake community and
-the maintainance team.
+the maintenance team.
 
 The "RFC" (request for comments) process is intended to provide a consistent
 and controlled path for new features to enter the language and standard
@@ -33,7 +33,7 @@ merged into the RFC repository as a markdown file. At that point the RFC is
     much more likely to make progress than those that don't receive any
     comments. Feel free to reach out to the RFC assignee in particular to get
     help identifying stakeholders and obstacles.
-  - The maintenance will discuss the RFC pull request, as much as possible in the
+  - The maintenance team will discuss the RFC pull request, as much as possible in the
     comment thread of the pull request itself. Offline discussion will be
     summarized on the pull request comment thread.
   - RFCs rarely go through this process unchanged, especially as alternatives
@@ -50,7 +50,7 @@ merged into the RFC repository as a markdown file. At that point the RFC is
     consensus amongst all participants in the RFC thread (which is usually
     impossible). However, the argument supporting the disposition on the RFC
     needs to have already been clearly articulated, and there should not be a
-    strong consensus *against* that position outside of the maintenance team. maintenance team members use their best judgment in taking this step, and the FCP itself ensures there is ample time and notification for stakeholders to push back if it is made prematurely.
+    strong consensus *against* that position outside of the maintenance team. Maintenance team members use their best judgment in taking this step, and the FCP itself ensures there is ample time and notification for stakeholders to push back if it is made prematurely.
     - Before actually entering FCP, *all* members of the maintenance team must sign off; this is often the point at which many maintenance team members first review the RFC in full depth.
   - In most cases, the FCP period is quiet, and the RFC is either merged or
     closed. However, sometimes substantial new arguments or ideas are raised,
@@ -59,14 +59,14 @@ merged into the RFC repository as a markdown file. At that point the RFC is
 ## The RFC life-cycle
 
 Once an RFC becomes active, then authors may implement it and submit the
-feature as a pull request to the Cake repo. Becoming 'active' is not a rubber
-stamp, and in particular still does not mean the feature will ultimately
-be merged; it does mean that the core team has agreed to it in principle
-and are amenable to merging it.
+feature as a pull request to the affected repository. Becoming 'active' is
+not a rubber stamp, and in particular still does not mean the feature will
+ultimately be merged; it does mean that the maintenance team has agreed to 
+it in principle and are amenable to merging it.
 
-Furthermore, the fact that a given RFC has been accepted and is
-'active' implies nothing about what priority is assigned to its
-implementation, nor whether anybody is currently working on it.
+Furthermore, the fact that a given RFC has been accepted and is 'active' 
+implies nothing about what priority is assigned to its implementation, 
+nor whether anybody is currently working on it.
 
 Modifications to active RFCs should be done in followup PRs.
 
@@ -87,6 +87,7 @@ feel free to ask (e.g. by leaving a comment on the associated issue).
 
 **Cake's RFC process owes its inspiration to the [Yarn RFC process], [Rust RFC process], [React RFC process] and [Ember RFC process]**
 
+[Cake repository]: https://github.com/cake-build/cake
 [Yarn RFC process]: https://github.com/yarnpkg/rfcs
 [Rust RFC process]: https://github.com/rust-lang/rfcs
 [React RFC process]: https://raw.githubusercontent.com/reactjs/rfcs
