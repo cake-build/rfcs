@@ -1,6 +1,6 @@
 - Start Date: 2018-09-07
-- RFC PR: (leave this empty)
-- Cake Issue: (leave this empty)
+- RFC PR: [#2334](https://github.com/cake-build/cake/pull/2334)
+- Cake Issue: [#2333](https://github.com/cake-build/cake/issues/2333)
 - Affected Areas: Cake, Cake.Core
 
 ## Summary
