@@ -27,6 +27,10 @@ Before starting to implement [project templates for Cake for Rider](https://gith
   * template for bootstrappers
   * `cake.config` template
   * Cake.Frosting project template
+* Supplied in cake-vscode
+  * `cake.build` template
+  * download of a `cake.config` (template is not supplied, but always downloaded.)
+  * downloads of bootstrappers (templates are not supplied, but always downloaded.)
 
 Then there's the pantry repo that contains handlebar templates to generate cake templates.
 (I've not checked which of the above were generated using pantry, so I'm not sure if that's up-to-date or not.)
@@ -48,6 +52,7 @@ So, for current versions of Rider and coming versions of VS we could maintain on
 
 (When above stage has been released the first part of this proposal (*Embrace .NET CLI templates*) will be reached, and [custom templates for Cake for Rider](https://github.com/cake-build/cake-rider/issues/63) would not be needed.)
 
+* Modify the commands in *Cake for VS Code* to utilize the .NET CLI templates instead of providing/downloading templates. 
 * When .NET CLI project templates in VS eventually leave the experimental status, drop the custom templates from *Cake for VS* and use only the .NET CLI templates.
 * When/if .NET CLI item templates become available in VS and/or Rider, drop the respective item templates and use only the .NET CLI templates.
 
