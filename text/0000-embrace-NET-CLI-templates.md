@@ -46,36 +46,36 @@ So, for current versions of Rider and coming versions of VS we could maintain on
 * Create all currently in-use project and item templates as .NET CLI templates
   * Deprecate cake-yeoman and probably pantry
 
-(When above stage has been released the first part of this proposal (*Embrace .NET CLI templates*) wil be reached, and [custom templates for Cake for Rider](https://github.com/cake-build/cake-rider/issues/63) would not be needed.)
+(When above stage has been released the first part of this proposal (*Embrace .NET CLI templates*) will be reached, and [custom templates for Cake for Rider](https://github.com/cake-build/cake-rider/issues/63) would not be needed.)
 
-* When NET CLI project templates in VS eventually leave the experimental status, drop the custom templates from *Cake for VS* and use only the NET CLI templates.
-* When/if NET CLI item templates become available in VS and/or Rider, drop the respective item templates and use only the NET CLI templates.
+* When .NET CLI project templates in VS eventually leave the experimental status, drop the custom templates from *Cake for VS* and use only the .NET CLI templates.
+* When/if .NET CLI item templates become available in VS and/or Rider, drop the respective item templates and use only the .NET CLI templates.
 
 (Both of the above will be breaking changes to the older versions of VS/Rider)
 
 ## How we teach this
 [how-we-teach-this]: #how-we-teach-this
 
-Communications on the new NET CLI templates: Those would be new additions to our already growing set of tools. No special communication aside from "normal" communications is needed.
+Communications on the new .NET CLI templates: Those would be new additions to our already growing set of tools. No special communication aside from "normal" communications is needed.
 
 Communication on the deprecation of Cake.Frosting.Template: Since the template will not be deprecated but only be moved as-is into another `nupkg`, I feel nothing "special" communication aside from "normal" communications is needed.
 
-Communication on the deprecation of cake-yeoman and pantry: Not sure how usage of those repositories currently is. Could be as simple as "We're dropping support of yeoman and start supporting NET CLI templates"
+Communication on the deprecation of cake-yeoman and pantry: Not sure how usage of those repositories currently is. Could be as simple as "We're dropping support of yeoman and start supporting .NET CLI templates"
 
-Communication on the deprecation of templates for older VS versions: I would suggest (when the day comes that NET CLI project templates in VS are no longer experimental) we stop maintaining the old `visx` template, but leave them in the `visx`. This way they will be available and will continue to be of use for users of older VS versions.
+Communication on the deprecation of templates for older VS versions: I would suggest (when the day comes that .NET CLI project templates in VS are no longer experimental) we stop maintaining the old `visx` template, but leave them in the `visx`. This way they will be available and will continue to be of use for users of older VS versions.
 
 Depending on the state of the templates in Rider, no communication could be needed at all.
 
 ## Drawbacks
 [drawbacks]: #drawbacks
 
-### Drawbacks to embracing NET CLI templates
+### Drawbacks to embracing .NET CLI templates
 
-Compared to the possibilities of yeoman templates, NET CLI templates are rather "crude": The yeoman generator can create all item-templates in one go, as well as use the newest sources from a github repository.
+Compared to the possibilities of yeoman templates, .NET CLI templates are rather "crude": The yeoman generator can create all item-templates in one go, as well as use the newest sources from a github repository.
 
-This features we would (probably, not 100% sure) lose.
+These features we would (probably, not 100% sure) lose.
 
-### Drawbacks to using NET CLI templates as the single source of templates in VS/Rider
+### Drawbacks to using .NET CLI templates as the single source of templates in VS/Rider
 
 * The feature in Visual Studio is currently experimental - so it has to activated before .NET CLI project templates will start showing up.
 * Neither VS, nor Rider currently show item templates. (Though VS *should* show them, I could not make it work.)
@@ -86,7 +86,7 @@ This features we would (probably, not 100% sure) lose.
 
 Firstly, .NET CLI templates are "the way" of the .NET world, so we should supply all required project and item templates as .NET CLI templates.
 
-Secondly, maintaining one common set of templates is more "cost-effective" that maintaining multiple.
+Secondly, maintaining one common set of templates is more "cost-effective" than maintaining multiple.
 
 The alternative would probably be to check/update `pantry` (last commit was in 2018) then keep maintaining different sets of templates (Rider, VS and Frosting) as we currently do.
 
@@ -94,6 +94,6 @@ The alternative would probably be to check/update `pantry` (last commit was in 2
 [unresolved-questions]: #unresolved-questions
 
 * Not sure when the feature in VS will leave experimental status
-* Not sure if showing item templates in VS is not supported of simply "currently broken"
+* Not sure if showing item templates in VS is not supported or simply "currently broken"
 * Not sure if Rider will start supporting item templates
-* could NET CLI templates provide templates to be downloaded, as cake-yeoman currently does.
+* could .NET CLI templates provide templates to be downloaded, as cake-yeoman currently does.
