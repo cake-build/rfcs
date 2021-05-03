@@ -67,7 +67,7 @@ Communication on the deprecation of Cake.Frosting.Template: Since the template w
 
 Communication on the deprecation of cake-yeoman and pantry: Not sure how usage of those repositories currently is. Could be as simple as "We're dropping support of yeoman and start supporting .NET CLI templates"
 
-Communication on the deprecation of templates for older VS versions: I would suggest (when the day comes that .NET CLI project templates in VS are no longer experimental) we stop maintaining the old `visx` template, but leave them in the `visx`. This way they will be available and will continue to be of use for users of older VS versions.
+Communication on the deprecation of templates for older VS versions: I would suggest (when the day comes that .NET CLI project templates in VS are no longer experimental) we stop maintaining the old `vsix` template, but leave them in the `vsix`. This way they will be available and will continue to be of use for users of older VS versions.
 
 Depending on the state of the templates in Rider, no communication could be needed at all.
 
@@ -76,7 +76,7 @@ Depending on the state of the templates in Rider, no communication could be need
 
 ### Drawbacks to embracing .NET CLI templates
 
-Compared to the possibilities of yeoman templates, .NET CLI templates are rather "crude": The yeoman generator can create all item-templates in one go, as well as use the newest sources from a github repository.
+Compared to the possibilities of yeoman templates, .NET CLI templates are rather "crude": The yeoman generator can create all item-templates in one go, as well as use the newest sources from a GitHub repository.
 
 These features we would (probably, not 100% sure) lose.
 
