@@ -35,7 +35,7 @@ Before starting to implement [project templates for Cake for Rider](https://gith
 Then there's the pantry repo that contains handlebar templates to generate cake templates.
 (I've not checked which of the above were generated using pantry, so I'm not sure if that's up-to-date or not.)
 
-While Rider (since version 2017.3) will pick up installed .NET CLI project templates directly and
+While [Rider (since version 2017.3)](https://blog.jetbrains.com/dotnet/2017/12/21/project-templates-rider-2017-3/) will pick up installed .NET CLI project templates directly and
 offer them as new project templates, Visual Studio supports this as
 an experimental feature, starting from [Visual Studio 16.8 Preview 2](https://devblogs.microsoft.com/dotnet/net-cli-templates-in-visual-studio/). 
 
@@ -100,5 +100,5 @@ The alternative would probably be to check/update `pantry` (last commit was in 2
 
 * Not sure when the feature in VS will leave experimental status
 * Not sure if showing item templates in VS is not supported or simply "currently broken"
-* Not sure if Rider will start supporting item templates
+* Not sure if Rider will start supporting item templates ([This is an existing suggestion since early 2019](https://youtrack.jetbrains.com/issue/RIDER-24197))
 * could .NET CLI templates provide templates to be downloaded, as cake-yeoman currently does.
