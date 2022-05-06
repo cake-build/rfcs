@@ -1,3 +1,16 @@
+# No longer being used
+
+When we first introduced the RFC concept to Cake, we believed that this is
+something that we would have the bandwidth/effort in order to support. However,
+after trying to do this for a couple of major changes to Cake, this was not
+the case.  As such, to avoid any ambiguity about what processes are being
+followed, we are going to archive this repository, and eventually, this repository
+will likely be deleted.
+
+If you have any questions, reach out via GitHub Discussions:
+
+https://github.com/orgs/cake-build/discussions
+
 # Cake RFCs
 
 Many changes, including bug fixes and documentation improvements can be
